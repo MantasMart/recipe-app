@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <div class="search">
+            <div class="search-category">
+                <span class="search-text">Search by Category:</span>
+                <select name="select-category" id="select-category"></select>
+                <button type="button" onclick="onButtonClickCategories()">Search</button>
+            </div>
+
+            <div class="search-name">
+                <span class="search-text">Search by Name:</span>
+                <input type="text" name="type-name">
+                <button type="button">Search</button>
+            </div>
+
+            <div class="search-ingredient">
+                <span class="search-text">Search by Ingredient:</span>
+                <select name="select-ingredient" id="select-ingredient"></select>
+                <button type="button">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <h2>Search results:</h2>
+    <table class="result-table" id="table" border="3px"> </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
